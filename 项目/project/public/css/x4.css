@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#l1 {
+  margin: 60px 20px;
+  width: 180px;
+  box-shadow: 0 2px 10px 0 hsla(0, 0%, 84%, 0.5);
+}
+.b1 {
+  width: 180px;
+  height: 60px;
+  border: none;
+  background: white;
+  font-size: 18px;
+  color: #7e7e7e;
+  margin: 10px 0;
+}
+.b1:hover {
+  font-size: 24px;
+  color: #00081c;
+}
+.b2 {
+  font-size: 24px;
+  color: #00081c;
+}
+#l2 {
+  margin: 60px 20px;
+  box-shadow: 0 2px 10px 0 hsla(0, 0%, 84%, 0.5);
+  padding: 0;
+}
+#img2 {
+  display: none;
+}
+#img1 {
+  margin-top: 20%;
+  margin-left: 45%;
+}
+.z1 {
+  color: #979797;
+  padding-left: 5px;
+}
+.btn1 {
+  width: 250px;
+  height: 50px;
+  background: white;
+  border: 1px solid #00081c;
+  margin-left: 37%;
+}
+#box {
+  display: none;
+}
+#box .div1 {
+  width: 770px;
+  margin: 80px auto;
+}
+#box ul {
+  width: 770px;
+  border: 1px solid #c7c7c7;
+}
+#box ul li {
+  width: 660px;
+  height: 60px;
+  margin: 0 auto;
+}
+#box ul li span {
+  display: inline-block;
+}
+#box ul li .s3 {
+  width: 300px;
+  height: 20px;
+}
+#box ul li .address-name {
+  width: 100px;
+  height: 20px;
+  margin-top: 22px;
+}
+#box ul li .address-tel {
+  width: 100px;
+  height: 20px;
+  margin-top: 22px;
+}
+#box ul li .s1 {
+  margin-top: 22px;
+  width: 40px;
+  height: 20px;
+  background: #c7c7c7;
+  border-radius: 2px ;
+  color: #fff;
+  text-align: center;
+}
+#box ul li .s2 {
+  margin-top: 22px;
+  margin-left: 10px;
+}
+.address-tel {
+  margin-left: 10px;
+}
+.address-1 span {
+  font-size: 18px;
+  margin-top: 22px;
+}
+.z11 {
+  margin-left: 20px;
+}
+.del {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
+.z11:hover {
+  cursor: pointer;
+}
+.del:hover {
+  cursor: pointer;
+}
+.tj:hover {
+  cursor: pointer;
+}
+.tj {
+  font-size: 18px;
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  font-weight: bold;
+}
+#pageList {
+  text-align: center;
+}
+#pageList a {
+  color: black;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  border: 1px solid #c7c7c7;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.active {
+  background: #786c3c;
+  color: white;
+}
+#box1 {
+  display: none;
+}
+#box2 {
+  width: 770px;
+  height: 50px;
+}
+/*# sourceMappingURL=x4.css.map */

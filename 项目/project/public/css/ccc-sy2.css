@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#a {
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+.ccc-img-box1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ccc-img-box1 img {
+  width: 100%;
+  height: 100%;
+}
+.ccc-img-box1 .ccc-wz-box1 {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
+}
+.ccc-img-box1 .ccc-wz-box1 .ccc-wz1 {
+  text-align: center;
+  color: #f4f4f4;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -60px;
+}
+.ccc-img-box1 .ccc-wz-box1 .ccc-wz1 button {
+  background: none;
+  border: 1px solid floralwhite;
+  margin: 10px;
+  padding: 5px 20px;
+  color: #fffffa;
+}
+.ccc-img-box1 .ccc-wz-box1 .ccc-wz1 button:hover {
+  box-shadow: 0 0 10px #fffffa;
+}
+.ccc-img-box1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ccc-img-box1 img {
+  width: 100%;
+  height: 100%;
+}
+.ccc-img-box1 .ccc-wz-box2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+}
+.ccc-img-box1 .ccc-wz-box2 .ccc-wz2 {
+  text-align: center;
+  color: #f4f4f4;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -60px;
+}
+.ccc-img-box1 .ccc-wz-box2 .ccc-wz2 button {
+  background: none;
+  border: 1px solid floralwhite;
+  margin: 10px;
+  padding: 5px 20px;
+  color: #fffffa;
+}
+.ccc-img-box1 .ccc-wz-box2 .ccc-wz2 button:hover {
+  box-shadow: 0 0 10px #fffffa;
+}
+@media (min-width: 100px) and (max-width: 700px) {
+  .ccc-wz1,
+  .ccc-wz2 {
+    margin-top: -60px;
+    font-size: 15px;
+  }
+  #ccc-img-box1 {
+    margin-top: 50px;
+  }
+  .ul button {
+    width: 70px;
+    height: 33px;
+    background: none;
+    border: 1px solid #333333;
+  }
+}
+@media (min-width: 701px) {
+  .ccc-wz1,
+  .ccc-wz2 {
+    font-size: 25px;
+  }
+  .ul button {
+    background: none;
+    border: 1px solid #333333;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+  }
+}
+@media (min-width: 1500px) {
+  .ccc-wz1,
+  .ccc-wz2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1600px) {
+  .ccc-wz1,
+  .ccc-wz2 {
+    font-size: 40px;
+  }
+}
+.ccc-lb-box {
+  margin: 0 0 50px 0 ;
+  text-align: center;
+  width: 100%;
+}
+.ccc-lb-box .ccc-lb {
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.ccc-lb-box .ccc-lb ul {
+  width: 300%;
+  position: relative;
+}
+.ccc-lb-box .ccc-lb li {
+  margin: 20px 0;
+  width: 8.3%;
+  float: left;
+}
+.ccc-lb-box .ccc-lb img {
+  width: 100%;
+}
+.ccc-lb-box .ccc-lb li:hover {
+  box-shadow: 0 0 10px #333333 inset;
+}
+.ccc-lb-box .ccc-lb button:hover {
+  box-shadow: 0 0 10px #333333;
+}
+.ccc-lb-box .ccc-lb .ccc-left {
+  float: left;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #000;
+  padding: 15px;
+  box-shadow: 0 0 10px #acacac;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+}
+.ccc-lb-box .ccc-lb .ccc-right {
+  float: right;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #000;
+  padding: 15px;
+  box-shadow: 0 0 10px #acacac;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+}
+.ccc-lb-box .ccc-lb .ccc-left:hover {
+  box-shadow: 0 0 20px #333333;
+}
+.ccc-lb-box .ccc-lb .ccc-right:hover {
+  box-shadow: 0 0 20px #333333;
+}

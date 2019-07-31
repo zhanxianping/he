@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/vue-router.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+		<link rel="stylesheet" href="../util/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<script src="../js/jquery-3.4.0.js"></script>
+		<script src="../util/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/ccc-tb.css" />
+		<link rel="stylesheet" type="text/css" href="../css/ccc-wb.css" />
+		<style type="text/css">
+			.c {
+				width: 1000px;
+				margin: auto;
+			}
+
+			.el-row {
+				margin-bottom: 20px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.el-col {
+				border-radius: 4px;
+			}
+
+			.main {
+				margin-top: 30px;
+			}
+
+			.imgg {
+				width: 6.25rem;
+				height: 6.25rem;
+			}
+		</style>
+	</head>
+	<body>
+
+
+
+
+		<el-container id='app'>
+			<el-row>
+				<div id="ccc-tb">
+					<!--这里放表头-->
+					<nav class="navbar navbar-default navbar-fixed-top" id="ccc-tb-nav">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header" id="ccc-tb-xp">
+								<img src="../images/ccc-logo.jpg" alt="" width="125" height="58" id="logo">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+								 aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<!--<a class="navbar-brand" href="#"></a>-->
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav" id="ccc-tb-dh">
+									<li><a href="ccc-sy2.html"><span>首页</span></a></li>
+									<li><a href="zxp-product.html"><span>产品</span></a></li>
+									<li><a href="surface-LW.html"><span>表带</span></a></li>
+									<li><a href="Accessories.html"><span>配饰</span></a></li>
+									<li><a href="zxp-activity.html"><span>活动</span></a></li>
+									<li><a href="Story.html"><span>关于我们</span></a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right" id="ccc-tb-zt">
+									<li><a href="#" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+									<li><a href="che.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+				</div>
+
+
+			</el-row>
+			<el-header  v-show="flag">
+				<el-row>
+					<el-col :span="24">
+						<div class="grid-content bg-purple-dark c">
+							<el-table :data="tableTop" style="width: 100%">
+								<el-table-column prop="name" label="姓名" width="180">
+								</el-table-column>
+								<el-table-column prop="address" label="地址">
+								</el-table-column>
+								<el-table-column prop="number" label="电话">
+								</el-table-column>
+								<el-table-column prop="" label="">
+									<el-button type="text" @click='tf=!tf'>更改收货信息</el-button>
+								</el-table-column>
+							</el-table>
+						</div>
+					</el-col>
+				</el-row>
+			</el-header>
+			<el-row v-show="!flag" style='text-align: center;margin-top: 50px;'>请注册地址</el-row>
+			<el-main>
+				<el-row>
+					<el-col :span="24">
+						<div class="grid-content bg-purple-dark c main">
+							<el-table :data="address" style="width: 100%" v-show="tf">
+								<el-table-column prop="" label="姓名" width="180">
+									<el-button>默认按钮</el-button>
+									<template slot-scope="props">
+										<el-button @click='addre(props.row)' type="text" style='color: #000000;'>{{props.row.name}}</el-button>
+									</template>
+								</el-table-column>
+								<el-table-column prop="" label="地址">
+									<el-button>默认按钮</el-button>
+									<template slot-scope="props">
+										<el-button @click='addre(props.row)' type="text" style='color: #000000;'>{{props.row.address}}</el-button>
+									</template>
+								</el-table-column>
+								<el-table-column prop="" label="电话">
+									<el-button>默认按钮</el-button>
+									<template slot-scope="props">
+										<el-button @click='addre(props.row)' type="text" style='color: #000000;'>{{props.row.number}}</el-button>
+									</template>
+								</el-table-column>
+								<el-table-column prop="" label="">
+								</el-table-column>
+							</el-table>
+							<el-table :data="tableData" style="width: 100%">
+								<el-table-column prop="" label="商品" width="180">
+									<template slot-scope="props">
+										<img :src="props.row.pictrue" class="imgg" @load="zj(props.row.num,props.row.jiage)">
+									</template>
+								</el-table-column>
+								<el-table-column prop="name" label="名称">
+								</el-table-column>
+								<el-table-column prop="ser" label="规格">
+								</el-table-column>
+								<el-table-column prop="num" label="数量">
+								</el-table-column>
+								<el-table-column prop="jiage" label="价格">
+								</el-table-column>
+							</el-table>
+
+							<el-table :data="tableTop" style="width: 100%">
+								<el-table-column prop="" label="" width="180">
+									总价：
+								</el-table-column>
+								<el-table-column prop="" label="">
+									<template slot-scope="props">
+										{{zjg}}
+									</template>
+								</el-table-column>
+								<el-table-column prop="" label="">
+								</el-table-column>
+								<el-table-column prop="" label="">
+								</el-table-column>
+								<el-table-column prop="" label="">
+									<el-button type="danger" @click='go'>去结算</el-button>
+								</el-table-column>
+							</el-table>
+						</div>
+				</el-row>
+			</el-main>
+
+		</el-container>
+		<div id="ccc-wb">
+			<div id="ccc-wb-box" class="tbody container ">
+				<div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+					<p>产品</p>
+					<ul>
+						<li><a href="zxp-product.html">所有手表</a></li>
+						<li><a href="zxp-male.html">男士手表</a></li>
+						<li><a href="zxp-woman.html">女士手表</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+					<p>配饰</p>
+					<ul>
+						<li><a href="Accessories.html">戒指</a></li>
+						<li><a href="Accessories.html">腕带</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+					<p>表带</p>
+					<ul>
+						<li><a href="surface-LW.html">选购表带</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+					<p>关于PATEK</p>
+					<ul>
+						<li><a href="Story.html">品牌故事</a></li>
+						<li><a href="Story.html">加入我们</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+					<p>会员俱乐部</p>
+					<ul id="patek">
+						<li><a href="">PATEK</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+					<p>关注PATEK</p>
+					<ul>
+						<li><a href=""><img src="../images/u79.png" alt=""></a></li>
+						<li><a href=""><img src="../images/u85.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div id="ccc" class="col-lg-6 col-md-6 col-sm-6 tbody container">
+					<img src="../images/ccc-logo.jpg" alt="">
+				</div>
+			</div>
+			<div id="ccc-dz">
+				<p> 粤公网安备 44030502000796号 | 粤ICP备15098750号-1M | 营业执照</p>
+				<p>ALL RIGHTS RESERVED. COPYRIGHT © 丹尼尔惠灵顿贸易（深圳）有限公司</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+			let arr = getCookie('sh-cart');
+			let data = {};
+			arr = arr.split(',')
+			axios.get('/order', {
+				params: {
+					id: getCookie('u-id'),
+					arr: arr
+				}
+			}).then(function(res) {
+				console.log(res)
+				show1(res.data)
+			})
+
+			function goto(arr,arr2,addres,zj) {
+				alert('谢谢购买')
+				window.setTimeout(function() {
+					window.open('http://127.0.0.1:8080/public/pages/ccc-sy2.html','_self')
+				}, 2000);
+				axios.get('/delorder', {
+					params: {
+						arr: arr,
+						arr2: arr2,
+						id:getCookie('u-id'),
+						addres:addres,
+						zj:zj
+					}
+				}).then(function() {
+			})
+				
+			}
+			let vue1 = {
+				data: {
+					tableTop: [],
+					tableData: [],
+					address: [],
+					zjg: 0,
+					tf: false,
+					flag:true
+				},
+				methods: {
+					go() {
+						let arr = [];
+						let arr2=[];
+						this.tableData.forEach(function(v, i) {
+							arr.push(v.id);
+							arr2.push(v.num);
+						})
+						goto(arr,arr2,this.tableTop,this.zjg)
+					},
+					zj(n, v) {
+						this.zjg += n * v
+					},
+					addre(v) {
+						this.tableTop[0].address = v.address;
+						this.tableTop[0].name = v.name;
+						this.tableTop[0].number = v.number;
+						this.tf = !this.tf
+					}
+				},
+				mounted() {
+					let user = this.tableTop;
+					if(data.user[0].length){
+						let ujson = {
+							name: data.user[0][0].name,
+							address: data.user[0][0].province + data.user[0][0].city + data.user[0][0].address,
+							number: data.user[0][0].phone
+						};
+						user.push(ujson);
+						let address = this.address;
+						data.user[0].forEach(function(v, i) {
+							let json = {
+								address: v.province + v.city + v.address,
+								name:v.name,
+								number:v.phone
+							}
+							address.push(json)
+						})
+					}else{
+						this.flag=false
+					}
+					let shop = this.tableData;
+					data.shop.forEach(function(v, i) {
+						let json = {
+							pictrue: v[0].img1,
+							name: v[0].g_name,
+							ser: v[0].size,
+							num: v[0].number,
+							jiage: v[0].rmb,
+							id: v[0].id
+						}
+						shop.push(json)
+					})
+				}
+			}
+
+			function show1(json) {
+				if (json.stat == 0) {
+					data = json.data
+					new Vue(vue1).$mount('#app')
+				}
+			}
+		</script>
+	</body>
+
+<script type="text/javascript">
+	var btnlogin=document.querySelector('.login');
+	btnlogin.onclick=function(){
+		if(getCookie('user')){
+			open('http://127.0.0.1:8080/public/pages/x1.html','_self')
+		}else{
+			open('http://127.0.0.1:8080/public/pages/FLand.html','_self')
+		}
+	}
+</script>
+
+</html>

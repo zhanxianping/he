@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../util/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../util/skin/jedate.css">
+    <link rel="stylesheet" href="../css/x1.css" />
+    <link rel="stylesheet" href="../util/test/jeDate-test.css">
+    <link rel="stylesheet" href="../css/x2.css">
+    <script src="../util/jquery-3.4.0.js"></script>
+    <script src="../util/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../util/src/jedate.js"></script>
+    <script src="../js/cookie.js"></script>
+    <style>
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #ccc-home-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 84px;
+      background: #333333;
+    }
+    #ccc-home1 {
+      float: left;
+      margin-left: 5%;
+    }
+    #ccc-home-dh {
+      margin-left: 35%;
+    }
+    .ccc-home-dh {
+      padding: 0 20px;
+      display: inline-block;
+      float: left;
+      line-height: 84px;
+      color: white;
+    }
+    #ccc-shopping li {
+      float: right;
+      display: inline-block;
+      padding: 0 20px;
+      line-height: 84px;
+    }
+    #ccc-shopping li a {
+      color: #ffffff;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    .ccc-home-dh:hover {
+      background: #fafffb;
+      color: #0b0d0f;
+    }
+     #ccc-tb-nav {
+                background: #333333;
+            }
+            #ccc-tb-dh {
+                margin-left: 50px;
+            }
+            #ccc-tb-dh li {
+                height: 43px;
+                transition: all .5s linear;
+                margin-top:4px ;
+            }
+            #ccc-tb-dh a {
+                color: #fffffa;
+                margin: 0;
+            }
+            #ccc-tb-dh span:hover{
+                border-bottom:1px solid #ffffff ;
+            }
+            /*#ccc-tb-dh li:hover {
+                border-bottom: 1px solid #fffffa;
+            }*/
+            #ccc-tb-zt{
+                margin:0 0 0 50px;
+            }
+            #ccc-tb-zt li {
+                height: 43px;
+                transition: all .5s linear;
+                margin-top:4px ;
+            }
+            #ccc-tb-zt span {
+                color: #fffffa;
+            }
+            #ccc-tb-zt span:hover {
+                padding: 0 0 3px 0;
+                border-bottom: #fffffa 1px solid;
+            }
+            #ccc-tb-xp>a>img{
+               margin-left: 0;
+               margin-top: 0;
+            }
+    
+    </style>
+    
+</head>
+<body>
+        <div id="ccc-tb">
+                <!--这里放表头-->
+                <nav class="navbar navbar-default navbar-fixed-top" id="ccc-tb-nav">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header" id="ccc-tb-xp">
+                            <a href="ccc-sy2.html"><img src="../images/ccc-logo.jpg" alt="" width="125" height="58" id="logo"></a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!--<a class="navbar-brand" href="#"></a>-->
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav" id="ccc-tb-dh">
+                                <li><a href="ccc-sy2.html"><span>首页</span></a></li>
+                                <li><a href="zxp-product.html"><span>产品</span></a></li>
+                                <li><a href="surface-LW.html"><span>表带</span></a></li>
+                                <li><a href="Accessories.html"><span>配饰</span></a></li>
+                                <li><a href="zxp-activity.html"><span>活动</span></a></li>
+                                <li><a href="Story.html"><span>关于我们</span></a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right" id="ccc-tb-zt">
+                                    <li><a id="heard-user" href="#" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                                    <li><a id="heard-car" href="che.html" ><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+            <div style="height:55px"></div>
+<div id="content">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+            <div id="l1">
+                <a href="x1.html"><button id="an1" class="bt1">会员中心</button></a>
+                    <a href="x8.html"><button id="an2" class="bt1">我的权益</button></a>
+                    <a href="x2.html"><button id="an3" class="bt1 b2">个人信息</button></a>
+                    <a href="x6.html"><button id="an4" class="bt1">修改密码</button></a>
+                    <a href="x4.html"><button id="an5" class="bt1">收货地址</button></a>
+                    <a href="x7.html"><button id="an6" class="bt1">我的订单</button></a>
+                    <a href="x9.html"><button id="an7" class="bt1">我的积分</button></a>
+            </div>
+        </div>
+        <div class="col-md-8" id="l2">
+            <div id="box1" class="container-fluid">
+                <form>
+                    <div class="form-group has-warning">
+                        <label for="inputWarning1" class="o1">推荐人的邀请码</label>
+                        <input type="text" class="form-control i1" id="inputWarning1" placeholder="请填写推荐人的邀请码">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <p class="p1">请尽量完善您的个人信息，方便我们同您取得联系！</p>
+                <form>
+                    <div class="form-group">
+                        <h3  class="o2">姓名</h3><input id="ipt1" type="text" class="form-control i2"  placeholder="请输入您的姓名">
+                    </div>
+                    <div class="form-group">
+                        <label  class="o2">性别</label>
+                        <input id="ipt2" type="text" class="form-control i2"  placeholder="请输入先生或女士">
+                    </div>
+                    <div class="form-group">
+                        <label  class="o2">手机号码</label>
+                        <input id="ipt3" type="text" disabled="disabled" class="form-control i2"  placeholder="">
+                    </div>
+                </form>
+                <div id="box">
+                    <h1 class="ho1">补充信息，生日和纪念日当月可获双倍积分</h1>
+                    <h2 class="po1">生日填写完成后无法修改</h2>
+                </div>
+                <div id="box2">
+                    <div class="jeitem">
+                        <label class=" o2">生日选择</label>
+                        <div class="jeinpbox"><input type="text" class="jeinput i2 form-control" id="test03"  placeholder="YYYY-MM-DD"></div>
+                    </div>
+                </div>
+            <form>
+                <div class="form-group">
+                    <label  class="o2">电子邮件</label>
+                    <input id="ipt4" type="text" class="form-control i2"  placeholder="请输入您的电子邮箱">
+                </div>
+            </form>
+                <button id="btn" class="btn1">保存</button>
+        </div>
+    <div id="bottom">
+
+    </div>
+</body>
+<script src="../util/test/demo.js"></script>
+<script>
+	let user=getCookie('user');
+	var btnlogin=document.querySelector('.login');
+	btnlogin.onclick=function(){
+		if(getCookie('user')){
+			open('http://127.0.0.1:8080/public/pages/x1.html','_self')
+		}else{
+			open('http://127.0.0.1:8080/public/pages/FLand.html','_self')
+		}
+	}
+    let oIpt1=document.getElementById('ipt1');
+    let oIpt2=document.getElementById('ipt2');
+    let oIpt3=document.getElementById('ipt3');
+    let oIpt4=document.getElementById('ipt4');
+    let oIpt5=document.getElementById('test03');
+    let oIpt6=document.getElementById('inputWarning1');
+    let oBtn=document.getElementById('btn');
+    
+
+    window.onload=function () {
+        function show() {
+            $.ajax({
+                url:'/x2',
+                type:'post',
+                data:{
+                	tel:user,
+                },
+                success:function (res) {
+                    if (res.error){
+                        console.log("数据错误");
+                    }else {
+                        oIpt3.value=`${res.data[0].tel}`;
+                        oIpt1.value=`${res.data[0].name}`;
+                        oIpt2.value=`${res.data[0].sex}`;
+                        oIpt4.value=`${res.data[0].mail}`;
+                    }
+                }
+            })
+        }
+        show();
+    };
+    
+    oBtn.onclick=function () {
+    	document.location.href="x1.html"
+        $.ajax({
+            url:'/x2-1',
+            type:'post',
+            data:{
+                name:oIpt1.value,
+                Sex:oIpt2.value,
+                Mail:oIpt4.value,
+                Time:oIpt5.value,
+                tjm:oIpt6.value,
+                tel:b,
+                
+            },
+            success:function (res) {
+                var json=JSON.parse(res);
+                if(json.error){
+                    alert('保存失败')
+                } else {
+                    console.log('保存成功')
+                }
+            }
+        })
+    };
+    $('#an1').click(function(){
+	document.location.href="x1.html"
+	})
+	$('#an2').click(function(){
+		document.location.href="x8.html"
+	})
+	$('#an3').click(function(){
+		document.location.href="x2.html"
+	})
+	$('#an4').click(function(){
+		document.location.href="x6.html"
+	})
+	$('#an5').click(function(){
+		document.location.href="x4.html"
+	})
+	$('#an6').click(function(){
+		document.location.href="x7.html"
+	})
+	$('#an7').click(function(){
+		document.location.href="x9.html"
+    })
+    
+    
+
+
+if (user){
+	$('#heard-user').attr('href','x1.html');
+	$('#heard-user').html('欢迎你：'+user);
+	$('#heard-car').attr('href','Shoppingcart.html');
+
+} else {
+	$('#heard-user').attr('href','FLand.html');
+	$('#heard-car').attr('href','FLand.html');
+}
+</script>
+</html>

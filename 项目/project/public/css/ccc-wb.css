@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#ccc-wb-box {
+  width: 100%;
+  background: #333333;
+  text-align: center;
+  border-bottom: 1px solid #607285;
+}
+#ccc-wb-box p {
+  margin: 30px 0 0 0 ;
+  color: #fffffa;
+  font-family: "宋体";
+}
+#ccc-wb-box #patek {
+  font-family: "宋体";
+  font-size: 20px;
+}
+#ccc-wb-box #patek a {
+  color: #FFD700;
+}
+#ccc-wb-box li {
+  margin: 10px 0;
+}
+#ccc-wb-box a {
+  color: #607285;
+  transition: all .5s linear;
+  text-decoration: none;
+  font-family: "造字工房刻宋（非商用）粗体";
+}
+#ccc-wb-box a:hover {
+  color: #fffffa;
+}
+#ccc img {
+  width: 40%;
+  height: 40%;
+  margin: 20px 0;
+}
+#ccc-dz {
+  background: #333333;
+  color: #607285;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+* {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #ccc-wb-box {
+            width: 100%;
+            background: #333333;
+            text-align: center;
+            border-bottom: 1px solid #607285;
+        }
+        #ccc-wb-box p {
+            margin: 30px 0 0 0 ;
+            color: #fffffa;
+            font-family: "宋体";
+        }
+        #ccc-wb-box #patek {
+            font-family: "宋体";
+            font-size: 20px;
+        }
+        #ccc-wb-box #patek a {
+            color: #FFD700;
+        }
+        #ccc-wb-box li {
+            margin: 10px 0;
+        }
+        #ccc-wb-box a {
+            color: #607285;
+            transition: all .5s linear;
+            text-decoration: none;
+            font-family: "造字工房刻宋（非商用）粗体";
+        }
+        #ccc-wb-box a:hover {
+            color: #fffffa;
+        }
+        #ccc img {
+            width: 40%;
+            height: 40%;
+            margin: 20px 0;
+        }
+        #ccc-dz {
+            background: #333333;
+            color: #607285;
+            text-align: center;
+            padding: 30px 0 20px 0;
+        }

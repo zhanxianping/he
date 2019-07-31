@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/ccc-sy2.css">
+    <link rel="stylesheet" href="../util/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="../util/jquery-3.4.0.js"></script>
+    <script src="../util/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/cookie.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/ccc-tb.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/ccc-wb.css"/>
+	<style>
+		 * {
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		}
+	</style>
+</head>
+<body>
+<!--头部-->
+    <div id="ccc-tb">
+        <!--这里放表头-->
+        <nav class="navbar navbar-default navbar-fixed-top" id="ccc-tb-nav">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header" id="ccc-tb-xp">
+                    <img src="../images/ccc-logo.jpg" alt="" width="125" height="58" id="logo">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#"></a>-->
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="ccc-tb-dh">
+                        <li><a href="ccc-sy2.html"><span>首页</span></a></li>
+                        <li><a href="zxp-product.html"><span>产品</span></a></li>
+                        <li><a href="surface-LW.html"><span>表带</span></a></li>
+                        <li><a href="Accessories.html"><span>配饰</span></a></li>
+                        <li><a href="zxp-activity.html"><span>活动</span></a></li>
+                        <li><a href="Story.html"><span>关于我们</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" id="ccc-tb-zt">
+                        <li><a href="#" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                        <li><a href="che.html" ><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+<!--内容-->
+<div class="ccc-img-box1" id="ccc-img-box1">
+    <div class="ccc-img1">
+        <img src="../images/ccc-sy1.jpg" alt="">
+    </div>
+    <div class="ccc-wz-box1">
+        <div class="ccc-wz1">
+            <span>指定腕表5折，赠限量表带</span>
+            <p>年 中 致 献 悦 享 臻 礼</p>
+            <span>活动时间：6月15日-6月18日</span>
+            <br>
+            <a href="http://127.0.0.1:8080/public/pages/zxp-activity.html">
+                <button class="ccc-btn1">
+                    点击探索
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="ccc-lb-box">
+    <h4>为你精选</h4>
+    <div class="ccc-lb">
+        <ul id="ccc-activity" class="ul">
+            <!--<li class="oli">
+                <img src="../images/ccc-2.jpg" alt="">
+                <span>xxxx</span><span>zzzz</span>
+                <p>尺寸</p>
+                <p>金钱</p>
+                <button>立即选购</button>
+            </li>
+            <li class="oli">
+                <img src="../images/ccc-3.png" alt="">
+                <span>xxxx</span><span>zzzz</span>
+                <p>尺寸</p>
+                <p>金钱</p>
+                <button>立即选购</button>
+            </li>
+            <li class="oli">
+                <img src="../images/ccc-3.png" alt="">
+                <span>xxxx</span><span>zzzz</span>
+                <p>尺寸</p>
+                <p>金钱</p>
+                <button>立即选购</button>
+            </li>
+            <li class="oli">
+                <img src="../images/ccc-3.png" alt="">
+                <span>xxxx</span><span>zzzz</span>
+                <p>尺寸</p>
+                <p>金钱</p>
+                <button>立即选购</button>
+            </li>
+            <li class="oli">
+                <img src="../images/ccc-3.png" alt="">
+                <span>xxxx</span><span>zzzz</span>
+                <p>尺寸</p>
+                <p>金钱</p>
+                <button>立即选购</button>
+            </li>
+            <li class="oli">
+                <img src="../images/ccc-3.png" alt="">
+                <span>xxxx</span><span>zzzz</span>
+                <p>尺寸</p>
+                <p>金钱</p>
+                <button>立即选购</button>
+            </li>
+            <li class="oli">
+                <img src="../images/ccc-3.png" alt="">
+                <span>xxxx</span><span>zzzz</span>
+                <p>尺寸</p>
+                <p>金钱</p>
+                <button>立即选购</button>
+            </li>
+            <li class="oli">
+                <img src="../images/ccc-2.jpg" alt="">
+                <span>xxxx</span><span>zzzz</span>
+                <p>尺寸</p>
+                <p>金钱</p>
+                <button>立即选购</button>
+            </li>-->
+        </ul>
+        <a href="javascript:;" class="glyphicon glyphicon-menu-left ccc-left"></a>
+        <a href="javascript:;" class="glyphicon glyphicon-menu-right ccc-right"></a>
+    </div>
+</div>
+
+<div class="ccc-img-box1">
+<div class="ccc-img1">
+    <img src="../images/ccc-nr1.jpg" alt="">
+</div>
+<div class="ccc-wz-box2">
+    <div class="ccc-wz2">
+        <span>CLASSIC BLACK</span>
+        <p>为时刻赋予内涵</p>
+        <span>历久弥新的设计，伴你不同时刻</span>
+        <br>
+        <a href="http://127.0.0.1:8080/public/pages/zxp-woman.html">
+            <button class="ccc-btn1">
+                前往选购
+            </button>
+        </a>
+    </div>
+</div>
+</div>
+<div class="ccc-lb-box">
+    <div class="ccc-lb">
+        <ul id="ccc-male" class="ul">
+        </ul>
+        <a href="javascript:;" class="glyphicon glyphicon-menu-left ccc-left"></a>
+        <a href="javascript:;" class="glyphicon glyphicon-menu-right ccc-right"></a>
+    </div>
+</div>
+
+<div class="ccc-img-box1">
+    <div class="ccc-img1">
+        <img src="../images/ccc-nr2.jpg" alt="">
+    </div>
+    <div class="ccc-wz-box1">
+        <div class="ccc-wz1">
+            <span>CLASSIC PETITE</span>
+            <p>钟情你的时刻</p>
+            <span>优雅造型,为分分秒秒增添气质</span>
+            <br>
+            <a href="http://127.0.0.1:8080/public/pages/zxp-male.html">
+                <button class="ccc-btn1">
+                    立即探索
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="ccc-lb-box">
+    <div class="ccc-lb">
+        <ul id="ccc-female" class="ul">
+        </ul>
+        <a href="javascript:;" class="glyphicon glyphicon-menu-left ccc-left"></a>
+        <a href="javascript:;" class="glyphicon glyphicon-menu-right ccc-right"></a>
+    </div>
+</div>
+
+<div class="ccc-img-box1">
+<div class="ccc-img1">
+    <img src="../images/ccc-nr1.jpg" alt="">
+</div>
+<div class="ccc-wz-box2">
+    <div class="ccc-wz2">
+        <span>CLASSIC RING</span>
+        <p>腕饰新选，进阶优雅</p>
+        <span>全新戒指，打造经典组合</span>
+        <br>
+        <a href="http://127.0.0.1:8080/public/pages/zxp-activity.html">
+            <button class="ccc-btn1">
+                前往选购
+            </button>
+        </a>
+    </div>
+</div>
+</div>
+<div class="ccc-lb-box">
+<div class="ccc-lb">
+    <ul id="ccc-parts" class="ul">
+    </ul>
+    <a href="javascript:;" class="glyphicon glyphicon-menu-left ccc-left"></a>
+    <a href="javascript:;" class="glyphicon glyphicon-menu-right ccc-right"></a>
+</div>
+</div>
+<!--尾部-->
+<div id="ccc-wb">
+    <div id="ccc-wb-box" class="tbody container ">
+        <div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+            <p>产品</p>
+            <ul>
+                <li><a href="zxp-product.html">所有手表</a></li>
+                <li><a href="zxp-male.html">男士手表</a></li>
+                <li><a href="zxp-woman.html">女士手表</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+            <p>配饰</p>
+            <ul>
+                <li><a href="Accessories.html">戒指</a></li>
+                <li><a href="Accessories.html">腕带</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+            <p>表带</p>
+            <ul>
+                <li><a href="surface-LW.html">选购表带</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+            <p>关于PATEK</p>
+            <ul>
+                <li><a href="Story.html">品牌故事</a></li>
+                <li><a href="Story.html">加入我们</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+            <p>会员俱乐部</p>
+            <ul id="patek">
+                <li><a href="">PATEK</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 tbody container">
+            <p>关注PATEK</p>
+            <ul>
+                <li><a href=""><img src="../images/u79.png" alt=""></a></li>
+                <li><a href=""><img src="../images/u85.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div id="ccc" class="col-lg-6 col-md-6 col-sm-6 tbody container">
+            <img src="../images/ccc-logo.jpg" alt="">
+        </div>
+    </div>
+    <div id="ccc-dz">
+        <p> 粤公网安备 44030502000796号 | 粤ICP备15098750号-1M | 营业执照</p>
+        <p>ALL RIGHTS RESERVED. COPYRIGHT © 丹尼尔惠灵顿贸易（深圳）有限公司</p>
+    </div>
+</div>
+</body>
+<script>
+	var btnlogin=document.querySelector('.login');
+	btnlogin.onclick=function(){
+		if(getCookie('user')){
+			open('http://127.0.0.1:8080/public/pages/x1.html','_self')
+		}else{
+			open('http://127.0.0.1:8080/public/pages/FLand.html','_self')
+		}
+	}
+    var a=0;
+    var speed=1000;
+    $('.ccc-right').click(function () {
+        let click=$(this).prev().prev();
+        let b=$('.ul li')[0].offsetWidth;
+        if (click.children('li').length==12){
+
+        }else {
+            //添加四个li
+            click.append(click.children('li').eq(0).clone());
+            click.append(click.children('li').eq(1).clone());
+            click.append(click.children('li').eq(2).clone());
+            click.append(click.children('li').eq(3).clone());
+        }
+        a++;
+        if (a>2){
+            a=1;
+            click.css('left','0px');
+        }
+        click.stop().animate({'left': -a*4*b+'px'},speed);
+    });
+    $('.ccc-left').click(function () {
+        let click=$(this).prev();
+        let b=$('.ul li')[0].offsetWidth;
+        if (click.children('li').length==12){
+
+        }else {
+            //添加四个li
+            click.append(click.children('li').eq(0).clone());
+            click.append(click.children('li').eq(1).clone());
+            click.append(click.children('li').eq(2).clone());
+            click.append(click.children('li').eq(3).clone());
+        }
+        a--;
+        if (a<0){
+            a=1;
+            click.css('left',-8*b+'px');
+        }
+        click.stop().animate({'left': -a*4*b+'px'},speed);
+    });
+    //展示图片数据
+    function show(click,img,name,sName,size,rmb,id){
+        click.prepend($(`
+                        <li class="oli" data-id="${id}">
+                            <img src="${img}" alt="">
+                            <span>${name}</span> <span>${sName}</span>
+                            <p>${size}</p>
+                            <p>￥ ${rmb}</p>
+                            <button >立即选购</button>
+                        </li>
+                        `));
+    }
+    //渲染数据
+    function data8(url,type,click){
+        console.log(click);
+        $.ajax({
+            url:url,
+            type:type,
+            success:function (res) {
+                let data=res.data;
+                if (res.error){
+                    alert('数据传输错误');
+                } else {
+                    for (let i=0;i<8;i++){
+                        show(click,data[i].img1,data[i].NAME,data[i].g_name,data[i].size,data[i].rmb,data[i].goods)
+                    }
+                }
+            }
+        })
+    }
+    //展示
+    data8('/cccActivity','post',$('#ccc-activity'));
+    data8('/cccMale','post',$('#ccc-male'));
+    data8('/cccFemale','post',$('#ccc-female'));
+    data8('/cccParts','post',$('#ccc-parts'));
+	
+	$('body').on('click','.oli',function () {
+		setCookie('g-id',$(this).data('id'),0.1);
+		window.location='http://127.0.0.1:8080/public/pages/Detailsshopping.html';
+	});
+	
+</script>
+</html>

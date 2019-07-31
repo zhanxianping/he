@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../util/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="../js/jquery-3.4.0.js"></script>
+    <script src="../util/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/ccc-tb.css"/>
+    <style>
+    </style>
+</head>
+    <body>
+    <div id="ccc-tb">
+        <!--这里放表头-->
+        <nav class="navbar navbar-default navbar-fixed-top" id="ccc-tb-nav">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header" id="ccc-tb-xp">
+                    <img src="../images/ccc-logo.jpg" alt="" width="125" height="58" id="logo">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#"></a>-->
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="ccc-tb-dh">
+                        <li><a href="ccc-sy2.html"><span>首页</span></a></li>
+                        <li><a href="zxp-product.html"><span>产品</span></a></li>
+                        <li><a href="surface-LW.html"><span>表带</span></a></li>
+                        <li><a href="Accessories.html"><span>配饰</span></a></li>
+                        <li><a href="zxp-activity.html"><span>活动</span></a></li>
+                        <li><a href="Story.html"><span>关于我们</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" id="ccc-tb-zt">
+                        <li><a href="#" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                        <li><a href="che.html" ><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+	<script type="text/javascript">
+		var btnlogin=document.querySelector('.login');
+		btnlogin.onclick=function(){
+			if(getCookie('user')){
+				open('http://127.0.0.1:8080/public/pages/x1.html','_self')
+			}else{
+				open('http://127.0.0.1:8080/public/pages/FLand.html','_self')
+			}
+		}
+	</script>
+    </body>
+</html>

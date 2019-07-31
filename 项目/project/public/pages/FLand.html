@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="../css/FHL-Land.css">
+    <link rel="shortcut icon" href="#" />
+    <script src="../js/ajax.js"></script>
+    <script src="../js/cookie.js"></script>
+
+
+</head>
+<body>
+    <div id="head" style="width: 100%;">
+        <p><span>P A T E k</span>P H I L I P P E</p>
+    </div>
+    <div id="big">
+        <div class="text">
+            <span>独 家 礼 遇</span><span>会 员 尊 享</span>
+            <h1>悦享爱意，报以时光</h1>
+            <h6>
+                <span>S H A R E</span>
+                <span>L O V E</span>
+                <span>R E T U R N</span>
+                <span>I N</span>
+                <span>T I M E</span>
+            </h6>
+        </div>
+    </div>
+    <div id="content">
+        <div class="box">
+                <p class="p1">手 机 号 码</p>
+                <input class="phone" type="text" id="user" name="user" placeholder="   请输入您的手机号码">
+                <span class="tips1 hide">请输入11位手机号</span>
+                <p class="p1">密 码</p>
+                <input class="pw1" type="password" id="pass" name="pass" placeholder="   请输入您的密码">
+                <span class='tips2 hide'>请输入6-20位密码(必须有大小写及数字)</span>
+                <button id="btn">登陆</button>
+            <p class="jump">
+                还不是会员？
+                <a href="FHL-Register.html">
+                    <span class="p1">立即注册</span>
+                </a>
+            </p>
+        </div>
+
+    </div>
+    <div id="tail">
+        <div>
+            <ul>
+                <a href=""><li>使用条款</li></a>
+                <li class="line">|</li>
+                <a href=""><li>隐私保护政策</li></a>
+                <li class="line">|</li>
+                <a href=""><li>防伪声明</li></a>
+                <li class="line">|</li>
+                <a href=""><li>网站地图</li></a>
+            </ul>
+        </div>
+        <div class="merchant">
+            <img src="../images/F2.png" height="20" width="20"/>
+                <a href=""><span class="span1">粤公网安备 44030502000796 号</span></a>
+                <span> | </span>
+                <a href=""><span>粤ICP备15098750号-1M</span></a>
+                <span> | </span>
+                <a href=""><span>营业执照</span></a>
+                <br>
+                <p>ALL RIGHTS RESERVED. COPYRIGHT © 丹尼尔惠灵顿（深圳）有限公司</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    //手机号验证
+    var phone = document.querySelector('.phone');
+    var tips1 = document.querySelector('.tips1');
+
+
+
+    //密码验证
+    var pw1=document.querySelector('.pw1');
+    var tips2=document.querySelector('.tips2');
+
+
+
+
+
+
+    var oUser=document.getElementById('user');
+    var oPass=document.getElementById('pass');
+    var oBtn=document.getElementById('btn');
+
+    oBtn.onclick=function () {
+        ajax({
+            url:'/f-dl',
+            type:'post',
+            data:{
+               tel:oUser.value,
+                pass:oPass.value
+            },
+            success:function (res) {
+                console.log(res);
+               var json=JSON.parse(res);
+               if (json.error){
+                   alert('登录失败')
+               } else {
+                   console.log(json.data[0]);
+                   setCookie('user',json.data[0].tel);
+                   setCookie('u-id',json.data[0].id);
+                   window.location.href="http://localhost:8080/public/pages/ccc-sy2.html"
+               }
+            }
+        })
+
+    }
+
+let oTiao=document.querySelector('#head p');
+oTiao.onclick=()=>{
+	window.location='http://127.0.0.1:8080/public/pages/ccc-sy2.html'
+}
+
+</script>
+</html>

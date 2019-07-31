@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#ds-top-right-li6-btn2-s{
+	transition: all 0.3s;
+	position: absolute;
+	width: 108.65px;
+	text-align: center;
+	background: #4CAE4C;
+	border: none;
+	display: none;
+	margin-left: 138px;
+	margin-top: -39.5px;
+}
+.c {
+  width: 1000px;
+  margin: auto;
+}
+.ds-content {
+  width: 1000px;
+  margin: auto;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.ds-top-left,
+.ds-top-right {
+  width: 500px;
+  height: 600px;
+  float: left;
+  background: #FFFFFF;
+}
+.ds-top-right {
+  background: #FAFAFB;
+}
+.ds-top-left-top-t {
+  overflow: hidden;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FAFAFB;
+  display: none;
+  z-index: 10;
+}
+.ds-top-left-top-t > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1000px;
+  height: 1000px;
+}
+.ds-top-left-top,
+.ds-top-left-top > img {
+  width: 500px;
+  height: 500px;
+}
+.ds-top-left-top > div:hover {
+  cursor: zoom-in;
+}
+.ds-top-left-top > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(200, 200, 200, 0.5);
+  display: none;
+}
+.ds-top-left-bottom {
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+.ds-top-left-bottom > img {
+  width: 100px;
+  height: 100px;
+  margin: 0 25px;
+  opacity: 0.5;
+}
+.ds-top-left-bottom > img:hover {
+  cursor: pointer;
+  background: #FAFAFA;
+  opacity: 1;
+}
+.ds-top-right > ul > li {
+  list-style: none;
+  width: 80%;
+  padding: 5px 10px;
+  margin: 36px auto;
+}
+.ds-top-right-li1 {
+  text-align: center;
+}
+.ds-top-right > ul > li > span {
+  margin-left: 20px;
+}
+.ds-top-right-li3 > ul {
+  margin-left: 20px;
+  width: 300px;
+  display: inline-block;
+}
+.ds-top-right-li3 > ul > li {
+  margin: 0 15px;
+  float: left;
+}
+.ds-top-right-li3 > span {
+  float: left;
+}
+.ds-top-right-li4-color {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0);
+  width: 20.8px;
+  height: 20.8px;
+  border-radius: 50%;
+}
+.ds-top-right-li4 > button {
+  float: right;
+  padding: 2px 4px;
+  border: none;
+  background: #eee;
+}
+.ds-top-right-li4 > button:hover {
+  background: #FFFFFF;
+  cursor: pointer;
+}
+.ds-top-right-li5 > input {
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
+}
+.ds-top-right-li6{
+	transition: all 0.3s;
+}
+.ds-top-right-li6 > button {
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+.ds-top-right-li6-btn1 {
+  background: #CDBC7A;
+  color: #000E22;
+  border: none;
+}
+.ds-top-right-li6-btn1:hover {
+  color: white;
+  cursor: pointer;
+}
+.ds-top-right-li6-btn2 {
+  background: #FFFFFF;
+  color: #CDBC7A;
+  border: 1px solid #000E22;
+}
+.ds-top-right-li6-btn2:hover {
+  color: #000E22;
+  cursor: pointer;
+  border: 1px solid #CDBC7A;
+}
+.ds-top-right-jiage {
+  color: red;
+  font-size: 16px;
+}
+.ds-top-right-li3-ul {
+  color: #CDBC7A;
+}
+.ds-top-right-jf {
+  font-size: 16px;
+  color: #479E7A;
+}
+#ds-op {
+  opacity: 1;
+}
+.ds-top-right-li4 {
+  position: relative;
+}
+.ds-top-right-li4 > div {
+  width: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: -40px;
+  background: white;
+  display: none;
+  margin-top: -100px;
+  height: 100px;
+}
+.ds-top-right-li4 > div > ul > li > p {
+  display: inline-block;
+  margin: 0 10px;
+}
+.ds-top-right-li4 > div > ul > li {
+  background: #EEEEEE;
+  list-style: none;
+  float: left;
+  width: 200px;
+  margin: 10px 25px;
+  text-align: center;
+  padding: 5px 0;
+}
+.ds-top-right-li4 > div > ul > li:hover {
+  cursor: pointer;
+}
+.ds-li4-color {
+  background: red;
+  color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+}
+.ds-center {
+  width: 1000px;
+  height: 415px;
+  padding-top: 15px;
+  background: #FAFAFA;
+}
+.ds-center > button {
+  display: inline-block;
+  float: right;
+  margin-right: 60px;
+  width: 60px;
+  font-size: 12px;
+  border: none;
+  background: #FAFAFA;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.ds-center > button:hover {
+  cursor: pointer;
+  background: white;
+}
+.ds-center > h3 {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid;
+  margin-left: 62.5px;
+  margin-bottom: 5px;
+}
+.ds-center > div > ul > li {
+  list-style: none;
+  width: 250px;
+  height: 345px;
+  padding: 15px;
+  text-align: center;
+  float: left;
+}
+.ds-center > div > ul > li:hover {
+  transition: all 0.8s;
+  background: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px #eeeeee, -1px -1px 1px 1px #eeeeee;
+}
+.ds-center > div > ul > li > img {
+  width: 220px;
+  height: 220px;
+}
+.ds-center > div > ul > li > p {
+  margin: 10px;
+  font-size: 12px;
+}
+button {
+  outline: none;
+}
+.ds-footer {
+  width: 1000px;
+}
+.ds-footer-top {
+  height: 100px;
+  width: 100%;
+  background: white;
+}
+.ds-footer-top > button {
+  margin-top: 70px;
+  height: 30px;
+  width: 80px;
+  line-height: 30px;
+  background: white;
+  border: none;
+  margin-left: 10px;
+  text-align: center;
+}
+.ds-footer-top > button:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #CCCCCC;
+}
+.ds-footer-bottom {
+  width: 100%;
+  background: white;
+}
+#ds-footer-top-c {
+  border-bottom: 1px solid #CCCCCC;
+}
+.ds-footer-xq {
+  display: none;
+}
+.ds-footer-gg {
+  padding: 50px 0;
+  display: none;
+  text-align: center;
+  position: relative;
+}
+.ds-footer-ds {
+  display: block;
+}
+.ds-footer-gg > div {
+  height: 190px;
+  width: 770px;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: 100px;
+  margin-top: 190px;
+  padding: 15px;
+}
+.ds-footer-gg > div > ul > li {
+  list-style: none;
+  float: left;
+  width: 335px;
+  margin: 15px;
+  padding: 3px 0;
+  border-bottom: 1px solid #EEEEEE;
+  font-size: 14px;
+}
+.ds-gg-r {
+  float: right;
+}
+.ds-gg-l {
+  float: left;
+}
+.ds-top-right-li5-kc {
+  color: red;
+  font-size: 12px;
+}
+.ds-top-right-li5-kcc {
+  font-size: 14px;
+}
+.ds-footer-top{
+	position: relative;
+}
+.ds-footer-top>button{
+	position: absolute;
+	left: 0;
+}

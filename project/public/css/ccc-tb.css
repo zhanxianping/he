@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#ccc-home-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84px;
+  background: #333333;
+}
+#ccc-home1 {
+  float: left;
+  margin-left: 5%;
+}
+#ccc-home-dh {
+  margin-left: 35%;
+}
+.ccc-home-dh {
+  padding: 0 20px;
+  display: inline-block;
+  float: left;
+  line-height: 84px;
+  color: white;
+}
+#ccc-shopping li {
+  float: right;
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 84px;
+}
+#ccc-shopping li a {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.ccc-home-dh:hover {
+  background: #fafffb;
+  color: #0b0d0f;
+}
+ #ccc-tb-nav {
+            background: #333333;
+        }
+        #ccc-tb-dh {
+            margin-left: 50px;
+        }
+        #ccc-tb-dh li {
+            height: 43px;
+            transition: all .5s linear;
+            margin-top:4px ;
+        }
+        #ccc-tb-dh a {
+            color: #fffffa;
+            margin: 0;
+        }
+        #ccc-tb-dh span:hover{
+            border-bottom:1px solid #ffffff ;
+        }
+        /*#ccc-tb-dh li:hover {
+            border-bottom: 1px solid #fffffa;
+        }*/
+        #ccc-tb-zt{
+            margin:0 0 0 50px;
+        }
+        #ccc-tb-zt li {
+            height: 43px;
+            transition: all .5s linear;
+            margin-top:4px ;
+        }
+        #ccc-tb-zt span {
+            color: #fffffa;
+        }
+        #ccc-tb-zt span:hover {
+            padding: 0 0 3px 0;
+            border-bottom: #fffffa 1px solid;
+        }
